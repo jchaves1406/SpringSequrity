@@ -28,7 +28,14 @@ public class JwtService {
     }
 
     public String generateToken(UserDetails userDetails) {
-        return generateToken(new HashMap<>(), userDetails);
+        User u=(User)userDetails;
+
+        HashMap<String,Object> myData=new HashMap<>();
+        myData.put("primerNombre", u.getFirstname());
+
+
+        // return generateToken(new HashMap<>(), userDetails);
+        return generateToken(myData, userDetails);
     }
 
     public String generateToken(
