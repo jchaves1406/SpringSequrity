@@ -1,9 +1,0 @@
-/home/ubuntu/OneDrive/Universidad/Computacion_e_IA/Septimo_semestre/Arquitectura_de_Software/Spring/login/src/main/java/login/com/login/security/RegisterRequest.java
-/home/ubuntu/OneDrive/Universidad/Computacion_e_IA/Septimo_semestre/Arquitectura_de_Software/Spring/login/src/main/java/login/com/login/entities/Role.java
-/home/ubuntu/OneDrive/Universidad/Computacion_e_IA/Septimo_semestre/Arquitectura_de_Software/Spring/login/src/main/java/login/com/login/LoginApplication.java
-/home/ubuntu/OneDrive/Universidad/Computacion_e_IA/Septimo_semestre/Arquitectura_de_Software/Spring/login/src/main/java/login/com/login/entities/User.java
-/home/ubuntu/OneDrive/Universidad/Computacion_e_IA/Septimo_semestre/Arquitectura_de_Software/Spring/login/src/main/java/login/com/login/repositories/UserRepository.java
-/home/ubuntu/OneDrive/Universidad/Computacion_e_IA/Septimo_semestre/Arquitectura_de_Software/Spring/login/src/main/java/login/com/login/security/AuthenticationController.java
-/home/ubuntu/OneDrive/Universidad/Computacion_e_IA/Septimo_semestre/Arquitectura_de_Software/Spring/login/src/main/java/login/com/login/security/AuthenticationResponse.java
-/home/ubuntu/OneDrive/Universidad/Computacion_e_IA/Septimo_semestre/Arquitectura_de_Software/Spring/login/src/main/java/login/com/login/security/AuthenticationService.java
-/home/ubuntu/OneDrive/Universidad/Computacion_e_IA/Septimo_semestre/Arquitectura_de_Software/Spring/login/src/main/java/login/com/login/security/AuthenticationRequest.java
