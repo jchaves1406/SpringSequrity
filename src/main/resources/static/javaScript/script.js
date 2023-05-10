@@ -187,3 +187,25 @@ function loadUsers() {
 		},
 	});
 }
+
+
+
+$('#upload-btn').click(function() {
+    var file = $('#file')[0].files[0];
+    var formData = new FormData();
+    formData.append('file', file);
+
+    $.ajax({
+        url: 'api/file/upload',
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function() {
+            alert('El archivo se cargó correctamente.');
+        },
+        error: function() {
+            alert('Error al cargar el archivo.');
+        }
+    });
+});

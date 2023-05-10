@@ -26,7 +26,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests()
                 .requestMatchers(
                         "/", "/api/login/**", "/javaScript/script.js", "/assets/**",
-                        "/index.html", "/login.html", "/register.html")
+                        "/index.html", "/login.html", "/register.html", "/api/file/**")
                 .permitAll()
                 .anyRequest()
                 .authenticated()
