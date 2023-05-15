@@ -22,8 +22,8 @@ public class FileController {
     public ResponseEntity<String> fileUpload(@RequestParam("file") MultipartFile file) {
         try {
             // Guardar el archivo en el sistema de archivos
-            String fileName = file.getOriginalFilename();
-            Path filePath = (Path) Paths.get("uploads/" + fileName);
+            // String fileName = file.getOriginalFilename();
+            Path filePath = (Path) Paths.get("uploads/" + file.getOriginalFilename());
             Files.copy(file.getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
             return ResponseEntity.ok("Archivo subido exitosamente");
         } catch (IOException e) {
