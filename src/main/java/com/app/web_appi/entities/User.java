@@ -5,7 +5,11 @@ import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+
 import java.util.Collection;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -27,10 +31,22 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue
     private Integer id;
+
+    @NotEmpty
     private String firstname;
+
+    @NotEmpty
     private String lastname;
+
+    @NotEmpty
+    @Email
     private String email;
+
+    @NotEmpty
     private String password;
+
+    @Lob
+    private byte[] photo;
 
     @Enumerated(EnumType.STRING)
     private Role role;
